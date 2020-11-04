@@ -1,5 +1,10 @@
-import React from "react";
+// React hooks
+import React, { useState, useEffect} from "react";
+// styling 
 import "./App.css";
+//axios
+import axios from "axios"
+
 
 function App() {
   return (
