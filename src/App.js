@@ -16,6 +16,7 @@ function App() {
   const [currentDate, setCurrentDate] = useState([]);
   // declaring effect hook
   useEffect(()=>{
+    console.log('This is not broken')
     const DailyPhoto = () => {
       axios
       .get(`${BASE_URL}?api_key=${API_KEY}`)
@@ -28,7 +29,7 @@ function App() {
         debugger
       })
     }
-    console.log("daily", DailyPhoto());
+    console.log('daily', DailyPhoto)
   }, [])
 
 
