@@ -8,7 +8,7 @@ import axios from "axios"
 import {BASE_URL, API_KEY} from "./constants/constants"
 //import from components file
 import Header from "./components/Header"
-import PhotoOfDay from "./components/"
+import PhotoOfDay from "./components/PhotoOfDay"
 
 
 function App() {
