@@ -20,26 +20,22 @@ function App() {
     const DailyPhoto = () => {
       axios
       .get(`${BASE_URL}?api_key=${API_KEY}`)
-      .then((res) => {
-        console.log('res', res)
-        setCurrentDate(res.data)
-      })
+         .then((res) => {
+            console.log('response', res);
+            setCurrentDate(res.data);
+          })
       .catch((err) => {
         console.log('This is an error message', err)
         debugger
-      })
-    }
-    console.log('daily', DailyPhoto)
-  }, [])
+      });
+    };
+    console.log('daily', DailyPhoto());
+  }, []);
 
-
-
-
-
-  return (
-    <div className="App">
-      <Header />
-      <PhotoOfDay
+	return (
+		<div className='App'>
+			<Header />
+			<PhotoOfDay
 				date={currentDate.date}
 				title={currentDate.title}
 				imgSrc={currentDate.url}
@@ -47,8 +43,8 @@ function App() {
 				description={currentDate.explanation}
 				copyright={currentDate.copyright}
 			/>
-    </div>
-  );
+		</div>
+	);
 }
 
 export default App;
