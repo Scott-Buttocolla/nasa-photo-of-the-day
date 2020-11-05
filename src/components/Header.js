@@ -2,18 +2,15 @@ import React from 'react';
 import styled from 'styled-components';
 
 const StyledHeader = styled.div`
-	border: 1px solid black;
 	display: flex;
 	flex-flow: row nowrap;
 	justify-content: space-between;
 	align-items: center;
-	margin: 20% 5%;
 	color: ${(pr) => pr.theme.danger};
 	.logo {
 		display:flex;
 		flex-direction:column ;
 		align-content:center;
-		border: 1px solid black;
 		max-width: 60%;
 	}
 	img{
@@ -31,8 +28,11 @@ const StyledHeader = styled.div`
 		margin-bottom: 0.5rem;
 	}
 	h3 {
-		font-size: 1.8rem;
+		font-size: 3rem;
+		letter-spacing:2px;
 		font-weight: bolder;
+		text-decoration:underline;
+		color:wheat;
 	}
 	@media ${(pr) => pr.theme.breakpoints.small} {
 		flex-flow: column wrap;
@@ -56,8 +56,8 @@ export default function Header(props) {
 				</div>
 			<div>
 				<h1>Photo of the Day</h1>
-				<h2>Date:{props.date}</h2>
-				<h3>Title: {props.title}</h3>
+				<h2>{props.date}</h2>
+				<h3>{props.title}</h3>
 			</div>
 		</StyledHeader>
 	);

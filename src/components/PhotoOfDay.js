@@ -6,15 +6,12 @@ const StyledPhotoOfDay = styled.div`
 	flex-direction: column;
     align-items: center;
     justify-content: center;
-	border: 1px solid black;
-	//max-width: 100%;
+	max-width: 100%;
 	margin: 0 auto;
 	img {
 		display:flex;
 		justify-content: center;
-		border: 5px solid red;
 		width: 60%;
-
 	}
 	p {
 		color: white;
@@ -30,7 +27,7 @@ const StyledPhotoOfDay = styled.div`
 	.copyright {
 		font-weight: 700;
 	}
-	@media ${(pr) => pr.theme.breakpoints.medium} {
+	@media ${(pr) => pr.theme.breakpoints.mobile} {
 		width: 100%;
 		padding: 0 5%;
 	}

@@ -34,7 +34,10 @@ function App() {
 
 	return (
 		<div className='App'>
-			<Header />
+			<Header 
+      date={currentDate.date}
+      title={currentDate.title}
+      />
 			<PhotoOfDay
 				date={currentDate.date}
 				title={currentDate.title}
