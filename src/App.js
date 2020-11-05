@@ -1,7 +1,7 @@
 // React hooks
 import React, { useState, useEffect} from "react";
 // styling 
-import "./App.css";
+import "./style/App.css";
 //axios
 import axios from "axios"
 // import constants which is my base url and api
@@ -13,7 +13,7 @@ import PhotoOfDay from "./components/PhotoOfDay"
 
 function App() {
   // declaring the state
-  const [currentDate, setCurrentDate] = useState([]);
+  const [currentDate, setCurrentDate] = useState([]);  
   // declaring effect hook
   useEffect(()=>{
     console.log('This is not broken')
